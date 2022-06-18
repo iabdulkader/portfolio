@@ -39,6 +39,7 @@
   padding: 2rem;
   text-align: center;
   transition: var(--transition);
+  min-width: 120px;
 }
 .about__card:hover{
   background: transparent;
