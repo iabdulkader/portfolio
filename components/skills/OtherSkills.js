@@ -4,7 +4,7 @@ import { BsPatchCheckFill } from "react-icons/bs";
 export default function FrontendSkills() {
   return(
     <div className={styles.skill__box}>
-      <h3>Other Skills</h3>
+      <h3>Other</h3>
      
       <div className={styles.technology__list}>
         <article>
@@ -76,11 +76,11 @@ export default function FrontendSkills() {
         <article>
           <div>
             <BsPatchCheckFill className={styles.skill__box__icon} />
-            <h5>Google Api</h5>
+            <h5>Firebase</h5>
           </div>
           
           <div>
-            <small className="text-light">Moderate</small>
+            <small className="text-light">Experienced</small>
           </div>
         </article>
         
