@@ -28,13 +28,13 @@ export default function Project({project}) {
             href={project.github}
             className={styles.btn}
             target="_blank"
-            rel="noreferer"
+            rel="noreferrer"
           >Github</a>
           <a 
             href={project.url} 
             className={`${styles.btn} ${styles.btn__primary}`}
             target="_blank"
-            rel="noreferer"
+            rel="noreferrer"
           >View Live</a>
         </div>
       

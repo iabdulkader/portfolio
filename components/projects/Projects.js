@@ -22,7 +22,7 @@ export default function Projects() {
       <h2>Projects</h2>
       
       <div className={`container ${styles.projects__container}`}>
-        {projects.map(project => <Project project={project} />)}
+        {projects.map(project => <Project project={project} key={project.index} />)}
       </div>
     </section>)
 }
