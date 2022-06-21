@@ -18,7 +18,7 @@ export default function Header() {
           <Image src={me} alt="me" layout="fill" />
         </div>
         
-        <a href="#contact" className={styles.scroll__down}>Scroll Down</a>
+        <a href="#footer" className={styles.scroll__down}>Scroll Down</a>
         
         <HeaderSocials />
       </div>

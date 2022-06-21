@@ -42,9 +42,9 @@ export default function About() {
             
           </div>
           
-          <p>I&apos;m a passionate fullstack developer, tech enthusiast, blog writter and have interest in travelling. I&apos;m currently living in Dhaka, Bangladesh.<br /><br />I have 5+ years experience in web developing and designing. I have done a lot of projects and also built some fun apps too. You can find some of my projects below and other Open Source projects on my Github.</p>
+          <p>I&apos;m a fullstack developer, tech enthusiast, blog writter and have interest in travelling. I&apos;m currently living in Dhaka, Bangladesh.<br /><br />I have 5+ years experience in web developing and designing. I have done a lot of projects and also built some fun apps too. You can find some of my projects below and other Open Source projects on my Github.</p>
           
-          <a className="btn btn-primary">Let&apos;s Talk</a>
+          <a href="#contact" className="btn btn-primary">Let&apos;s Talk</a>
         </div>
       </div>
     </section>
