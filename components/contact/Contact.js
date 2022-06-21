@@ -2,15 +2,42 @@ import styles from "./Contact.module.css";
 import { MdOutlineEmail } from "react-icons/md";
 import { RiMessengerLine } from "react-icons/ri";
 import { IoLogoTwitter } from "react-icons/io";
+import toast from "react-hot-toast";
 
 export default function Contact() {
   
   const submit = e => {
     e.preventDefault();
-    console.log(e.target)
-    //e.target.reset()
+    toast.loading("Sending")
     
+    const send = async () => {
+      const respose = await fetch("/api/email", {
+        method: 'POST',
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          name: e.target.name.value,
+          email: e.target.email.value, 
+          message: e.target.message.value, 
+        })
+      })
+      
+      const data = await respose.json()
+      
+      if(data.done){
+        toast.dismiss();
+        e.target.reset();
+        toast.success("Message Sent Successfully.")
+      } else {
+        toast.dismiss();
+        e.target.reset();
+        toast.error("Something went wrong.")
+      }
+    }
     
+    send()
   }
   
   return(
