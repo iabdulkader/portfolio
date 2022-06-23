@@ -18,7 +18,7 @@ export default function Footer() {
       <div className={styles.footer__socials}>
         <a href="https://twitter.com/itsabdulkader" target="_blank" rel="noreferrer"><IoLogoTwitter /></a>
         <a href="https://github.com/iabdulkader" target="_blank" rel="noreferrer"><BsGithub /></a>
-        <a href="https://linkedin.com/itsabdulkader" target="_blank" rel="noreferrer"><BsLinkedin /></a>
+        <a href="https://www.linkedin.com/in/itsabdulkader" target="_blank" rel="noreferrer"><BsLinkedin /></a>
       </div>
       
       <div className={styles.footer__copyright}>

@@ -52,21 +52,21 @@ export default function Contact() {
             <MdOutlineEmail className={styles.icon__style} />
             <h4>Email</h4>
             <h5 className="text-light">abdulkadernow@gmail.com</h5>
-            <a href="mailto:abdulkadernow@gmail.com">Send A Mail</a>
+            <a href="mailto:abdulkadernow@gmail.com" target="_blank" rel="noreferrer">Send A Mail</a>
           </article>
           
           <article className={styles.contact__option}>
             <RiMessengerLine className={styles.icon__style} />
             <h4>Messenger</h4>
             <h5 className="text-light">Abdul Kader</h5>
-            <a href="https://m.me/itsabdulkader">Send A Message</a>
+            <a href="https://m.me/itsabdulkader" target="_blank" rel="noreferrer">Send A Message</a>
           </article>
           
           <article className={styles.contact__option}>
             <IoLogoTwitter className={styles.icon__style} />
             <h4>Twitter</h4>
             <h5 className="text-light">itsabdulkader</h5>
-            <a href="https://twitter.com/itsabdulkader">Connect</a>
+            <a href="https://twitter.com/itsabdulkader" target="_blank" rel="noreferrer">Connect</a>
           </article>
           
         </div>
