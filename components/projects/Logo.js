@@ -9,7 +9,7 @@ export default function Logo({ index }){
       : index == 1 ?
           (<div>
           <h1 className="alink">
-           aLink!<span className="koma">,</span></h1>
+           aLink!<span className="koma">.</span></h1>
          </div>) 
       : index == 2 ?
           (<div>
