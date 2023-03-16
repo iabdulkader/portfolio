@@ -4,7 +4,7 @@ const projectsList = [
     {
       name: "joShare | File Sharing App",
       description: "joShare is a simple and efficient file sharing app authenticating users with PIN. Checkout for more features.",
-      url: "https://joshare.ml",
+      url: "https://joshare.xyz",
       github: "https://github.com/iabdulkader/joshare-frontend",
       stack: ["akar-icons:nextjs-fill", "simple-icons:express", "simple-icons:mongodb", "simple-icons:vercel", "simple-icons:firebase"],
       index: 0
