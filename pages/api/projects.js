@@ -20,7 +20,7 @@ const projectsList = [
     {
       name: "jobin | Pastebin",
       description: "jobin is a pastebin like web app. It's very simple and fast. Comes with API support.",
-      url: "https://jobin.tk",
+      url: "https://jobin-9yiv.onrender.com",
       github: "https://github.com/iabdulkader/jobin",
       stack: ["simple-icons:express", "simple-icons:heroku", "simple-icons:mongodb", "file-icons:ejs"],
       index: 2
