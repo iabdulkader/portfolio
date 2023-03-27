@@ -12,8 +12,8 @@ function Hero({}: Props) {
 
       {/* Boxes */}
 
-      <div className="h-full grid grid-cols-1 lg:grid-cols-2 gap-5">
-        <div className="h-[30rem] px-5 lg:pl-5 lg:px-0">
+      <div className="h-full grid grid-cols-1 lg:grid-cols-2 gap-3 lg:gap-5">
+        <div className="h-[24rem] lg:h-[30rem] px-2 lg:pl-5 lg:px-0">
           <Box
             className="bg-[#58B19f]"
             animatedText="Hey broooooo"
@@ -21,8 +21,8 @@ function Hero({}: Props) {
           />
         </div>
 
-        <div className="h-[30rem] grid grid-rows-2 px-5 lg:pr-5 lg:px-0 gap-5">
-          <div className="h-full gap-5 grid grid-cols-2">
+        <div className="h-[24rem] lg:h-[30rem] grid grid-rows-2 px-2 lg:pr-5 lg:px-0 gap-3 lg:gap-5">
+          <div className="h-full gap-3 lg:gap-5 grid grid-cols-2">
             <Box className="bg-[#FD7272]" animatedText="Hey broooooo" />
             <Box className="bg-[#25CCF7]" animatedText="Hey broooooo" />
           </div>

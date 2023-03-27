@@ -9,7 +9,7 @@ const Marquee = ({ text }: Props) => {
   const repeatedText = Array.from({ length: 8 }, () => text).join(" ");
 
   return (
-    <div className={`${styles.wrapper} mx-8`}>
+    <div className={`${styles.wrapper} mx-3`}>
       <div className={`${styles.marquee} font-black text-[5rem]`}>
         <p>{repeatedText}</p>
         <p>{repeatedText}</p>
