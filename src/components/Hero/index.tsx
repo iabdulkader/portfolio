@@ -20,7 +20,7 @@ function Hero({}: Props) {
       <div className="h-full grid grid-cols-1 lg:grid-cols-2 gap-3 lg:gap-5">
         <div className="h-[24rem] lg:h-[30rem] px-2 lg:pl-5 lg:px-0">
           <Box
-            className="bg-[#58B19f]"
+            className="bg-[#2800E7]"
             animatedText="As an experienced and passionate full stack developer, I bring a diverse range of technical expertise to the table. From building responsive user interfaces with React, Next.js, and Svelte to designing scalable backend systems with Express, Node, Python, Django, and Docker, I am comfortable with a range of different technologies. With excellent communication skills and a collaborative mindset, I thrive in team-oriented environments and always aim to add value to any project I am a part of."
             showWithOutHover
             duration={350}
@@ -38,14 +38,14 @@ function Hero({}: Props) {
           <div className="h-full gap-3 lg:gap-5 grid grid-cols-2">
             <Box
               duration={80}
-              className="bg-[#FD7272]"
+              className="bg-[#FFFFFF] text-slate-900"
               animatedText="Joshare. jobin. modal-rt. link-shortner. joshare-file-service-microservice. 1337x API."
               bottomLeft={<div>Works</div>}
               bottomRight={<BsTerminalPlus />}
             />
             <Box
               duration={220}
-              className="bg-[#25CCF7]"
+              className="bg-[#344e41] "
               animatedText="React, Nextjs, Svelte, Redux, Context-API, Tailwind, Chakra, Material-UI, Express, Socket-IO, Node, Python, Django, Docker, MongoDB, PostgreSQL, MySQL, Redis, Heroku, Netlify, Vercel, DigitalOcean, Firebase, Git, Github, Trello, Slack, Discord, Zoom, Figma, Adobe Photoshop, Adobe Illustrator."
               bottomLeft={<div>Skills</div>}
               bottomRight={<BiNetworkChart />}
@@ -54,7 +54,7 @@ function Hero({}: Props) {
 
           <Box
             duration={60}
-            className="bg-[#FEA47F]"
+            className="bg-[#FEF48C] text-slate-900"
             animatedText="Contact me for any work or suggestions that you would like to give."
             bottomLeft={<div>Contact</div>}
             bottomRight={<BiSend />}
