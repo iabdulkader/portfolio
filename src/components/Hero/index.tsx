@@ -5,6 +5,7 @@ import { AiOutlineDown } from "react-icons/ai";
 import { BsTerminalPlus } from "react-icons/bs";
 import { BiNetworkChart, BiSend } from "react-icons/bi";
 import Logo from "../../assets/logo.svg";
+import Link from "next/link";
 
 type Props = {};
 
@@ -36,13 +37,16 @@ function Hero({}: Props) {
 
         <div className="h-[24rem] lg:h-[30rem] grid grid-rows-2 px-2 lg:pr-5 lg:px-0 gap-3 lg:gap-5">
           <div className="h-full gap-3 lg:gap-5 grid grid-cols-2">
-            <Box
-              duration={80}
-              className="bg-[#FFFFFF] text-slate-900"
-              animatedText="Joshare. jobin. modal-rt. link-shortner. joshare-file-service-microservice. 1337x API."
-              bottomLeft={<div>Works</div>}
-              bottomRight={<BsTerminalPlus />}
-            />
+            <a href="/works">
+              <Box
+                duration={80}
+                className="bg-[#FFFFFF] text-slate-900"
+                animatedText="Joshare. jobin. modal-rt. link-shortner. joshare-file-service-microservice. 1337x API."
+                bottomLeft={<div>Works</div>}
+                bottomRight={<BsTerminalPlus />}
+              />
+            </a>
+
             <Box
               duration={220}
               className="bg-[#344e41] "
