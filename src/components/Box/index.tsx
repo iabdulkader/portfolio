@@ -25,7 +25,7 @@ const Box = ({
       className={`flex flex-col overflow-hidden items-center h-full rounded-[2.5rem] hover:scale-95 transition-all duration-300 group ${className}`}
     >
       <div
-        className={`h-[3rem] w-full flex justify-between px-8 items-start pt-6 ${
+        className={`h-[3rem] w-full flex justify-between px-5 lg:px-8 items-start pt-6 ${
           showWithOutHover ? "block" : "visible group-hover:invisible"
         }`}
       >
@@ -33,7 +33,7 @@ const Box = ({
         <div>{topRight}</div>
       </div>
 
-      <div className="flex-grow inset-0 flex items-center">
+      <div className="flex-grow inset-0 flex items-center w-full px-3">
         <div
           className={`overflow-hidden ${
             showWithOutHover ? "block" : "hidden group-hover:block"
@@ -44,7 +44,7 @@ const Box = ({
       </div>
 
       <div
-        className={`h-[3rem] w-full flex justify-between px-8 items-start pb-6 ${
+        className={`h-[3rem] w-full flex justify-between px-5 lg:px-8 items-start pb-6 ${
           showWithOutHover ? "block" : "visible group-hover:invisible"
         }`}
       >

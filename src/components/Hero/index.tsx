@@ -30,8 +30,8 @@ function Hero({}: Props) {
             <Box
               className="bg-[#FD7272]"
               animatedText="Hey broooooo"
-              bottomLeft={<div>Bottom Left</div>}
-              bottomRight={<div>Bottom Right</div>}
+              bottomLeft={<div>About</div>}
+              bottomRight={<div>--</div>}
             />
             <Box className="bg-[#25CCF7]" animatedText="Hey broooooo" />
           </div>
