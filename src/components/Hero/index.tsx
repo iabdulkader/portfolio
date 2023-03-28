@@ -4,6 +4,7 @@ import Image from "next/image";
 import { AiOutlineDown } from "react-icons/ai";
 import { BsTerminalPlus } from "react-icons/bs";
 import { BiNetworkChart, BiSend } from "react-icons/bi";
+import Logo from "../../assets/logo.svg";
 
 type Props = {};
 
@@ -25,7 +26,7 @@ function Hero({}: Props) {
             duration={350}
             topRight={
               <div className="w-12 h-12">
-                <Image src={require("../../assets/logo.svg")} alt="logo" />
+                <Image src={Logo} alt="logo" />
               </div>
             }
             bottomLeft={<div className="">About</div>}
