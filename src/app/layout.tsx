@@ -20,7 +20,7 @@ export default function RootLayout({
         <link rel="icon" href="/logo.svg" />
         <title>{metadata.title}</title>
       </head>
-      <body className="bg-bg_primary text-slate-50 font-[Satoshi]">
+      <body className="lg:cursor-none bg-bg_primary text-slate-50 font-[Satoshi]">
         {children}
       </body>
     </html>

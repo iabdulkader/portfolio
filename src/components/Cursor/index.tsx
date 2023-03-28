@@ -51,7 +51,7 @@ function Cursor({}: Props) {
 
   return (
     <motion.div
-      className={styles.cursor}
+      className={`${styles.cursor} invisible lg:visible`}
       //   variants={}
       variants={variants}
       animate={cursorVariant}
