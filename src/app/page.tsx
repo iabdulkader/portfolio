@@ -1,5 +1,6 @@
 import About from "@/components/About";
 import Cursor from "@/components/Cursor";
+import Layout from "@/components/Layout";
 import Image from "next/image";
 import Hero from "../components/Hero";
 
@@ -8,7 +9,10 @@ export default function Home() {
     <main>
       <Cursor />
       <Hero />
-      <About />
+      <Layout>
+        <About />
+        {/* <About /> */}
+      </Layout>
     </main>
   );
 }

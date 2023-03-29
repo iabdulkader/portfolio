@@ -5,7 +5,11 @@ type Props = {
 };
 
 const Layout = ({ children }: Props) => {
-  return <div>{children}</div>;
+  return (
+    <div className="flex flex-col items-center mx-3 lg:mx-5 my-5">
+      {children}
+    </div>
+  );
 };
 
 export default Layout;
