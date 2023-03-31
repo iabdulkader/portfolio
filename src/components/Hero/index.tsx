@@ -39,7 +39,7 @@ function Hero({}: Props) {
 
         <div className="h-[24rem] lg:h-[30rem] grid grid-rows-2 px-2 lg:pr-5 lg:px-0 gap-3 lg:gap-5">
           <div className="h-full gap-3 lg:gap-5 grid grid-cols-2">
-            <Link href="/works">
+            <Link href="#skills">
               <Box
                 duration={100}
                 className="bg-[#FFFFFF] text-slate-900"
@@ -48,14 +48,15 @@ function Hero({}: Props) {
                 bottomRight={<BsTerminalPlus />}
               />
             </Link>
-
-            <Box
-              duration={350}
-              className="bg-[#344e41] "
-              animatedText="React, Nextjs, Svelte, Redux, Context-API, Tailwind, Chakra, Material-UI, Express, Socket-IO, Node, Python, Django, Docker, MongoDB, PostgreSQL, MySQL, Redis, Heroku, Netlify, Vercel, DigitalOcean, Firebase, Git, Github, Trello, Slack, Discord, Zoom, Figma, Adobe Photoshop, Adobe Illustrator."
-              bottomLeft={<div>Skills</div>}
-              bottomRight={<BiNetworkChart />}
-            />
+            <a href="#skills">
+              <Box
+                duration={350}
+                className="bg-[#344e41] "
+                animatedText="React, Nextjs, Svelte, Redux, Context-API, Tailwind, Chakra, Material-UI, Express, Socket-IO, Node, Python, Django, Docker, MongoDB, PostgreSQL, MySQL, Redis, Heroku, Netlify, Vercel, DigitalOcean, Firebase, Git, Github, Trello, Slack, Discord, Zoom, Figma, Adobe Photoshop, Adobe Illustrator."
+                bottomLeft={<div>Skills</div>}
+                bottomRight={<BiNetworkChart />}
+              />
+            </a>
           </div>
 
           <Box
