@@ -9,8 +9,11 @@ type Props = {};
 
 function About({}: Props) {
   return (
-    <div id="about" className="grid grid-cols-1 lg:grid-cols-2 my-10 gap-20">
-      <div className="inset-0">
+    <div
+      id="about"
+      className="text-[#C5C2FF] grid grid-cols-1 lg:grid-cols-2 my-10 gap-20"
+    >
+      <div className="inset-0 ">
         <p className="text-lg mb-3">About Me</p>
         <h1 className="text-[3rem] lg:text-[5rem] leading-none font-medium">
           Hello, <br /> I'm Abdul Kader, a Full Stack JavaScript and TypeScript
