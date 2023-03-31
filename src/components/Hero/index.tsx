@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+
+import React, { useRef } from "react";
 import Box from "../Box";
 import Image from "next/image";
 import { AiOutlineDown } from "react-icons/ai";
@@ -6,19 +8,35 @@ import { BsTerminalPlus } from "react-icons/bs";
 import { BiNetworkChart, BiSend } from "react-icons/bi";
 import Logo from "../../assets/logo.svg";
 import Link from "next/link";
+import HeroText from "./HeroText";
+import { useParallax } from "react-scroll-parallax";
 
 type Props = {};
 
 function Hero({}: Props) {
+  const target = useRef<HTMLDivElement>(null);
+  const train = useParallax({
+    speed: 2,
+    targetElement: target.current as HTMLDivElement,
+  });
+
+  const cloud = useParallax({
+    speed: 80,
+    targetElement: target.current as HTMLDivElement,
+  });
+
   return (
-    <div className="mb-6">
-      <div className="flex justify-center my-48">
-        <h1 className="font-[Satoshi] text-5xl font-bold">abdul kader</h1>
+    <div ref={target} className="relative mb-6 h-full w-full">
+      <div ref={train.ref as React.RefObject<HTMLDivElement>}>
+        <HeroText />
       </div>
 
       {/* Boxes */}
 
-      <div className="h-full grid grid-cols-1 lg:grid-cols-2 gap-3 lg:gap-5">
+      <div
+        ref={cloud.ref as React.RefObject<HTMLDivElement>}
+        className="h-full grid grid-cols-1 lg:grid-cols-2 gap-3 lg:gap-5"
+      >
         <div className="h-[24rem] lg:h-[30rem] px-2 lg:pl-5 lg:px-0">
           <a href="#about">
             <Box
