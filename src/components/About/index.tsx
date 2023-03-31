@@ -30,11 +30,11 @@ function About({}: Props) {
           </div>
 
           <div className="flex items-center gap-6">
-            <button className="bg-[#FEF48C] font-bold flex items-center gap-3 text-sm lg:text-xl px-8 py-5 rounded-[2.5rem] mt-5 text-slate-950 hover:scale-95  transition-all duration-300">
+            <button className="bg-[#FEF48C] font-bold flex items-center gap-1 lg:gap-3 text-xs whitespace-nowrap lg:text-xl px-8 py-5 rounded-[2.5rem] mt-5 text-slate-950 hover:scale-95  transition-all duration-300">
               <HiOutlineDownload /> Download Resume
             </button>
 
-            <button className="bg-[#FEF48C] font-bold flex items-center gap-3 text-sm lg:text-xl px-8 py-5 rounded-[2.5rem] mt-5 text-slate-950 hover:scale-95 transition-all duration-300">
+            <button className="bg-[#FEF48C] font-bold flex items-center gap-1 lg:gap-3 text-xs whitespace-nowrap lg:text-xl px-8 py-5 rounded-[2.5rem] mt-5 text-slate-950 hover:scale-95 transition-all duration-300">
               <HiReply /> Hire Me
             </button>
           </div>
