@@ -2,7 +2,7 @@ import Head from "next/head";
 import "./globals.css";
 
 export const metadata = {
-  title: "abdul kader | full stack developer",
+  title: "abdul kader | Full Stack developer",
   description: "abdul kader | full stack developer",
 };
 
@@ -20,7 +20,7 @@ export default function RootLayout({
         <link rel="icon" href="/logo.svg" />
         <title>{metadata.title}</title>
       </head>
-      <body className="lg:cursor-none bg-bg_primary text-slate-50 font-[Satoshi]">
+      <body className="scrollbar-thumb-[#FEF48C] scrollbar-track-transparent scrollbar-thin scrollbar-thumb-rounded-lg lg:cursor-none bg-bg_primary text-slate-50 font-[Satoshi]">
         {children}
       </body>
     </html>

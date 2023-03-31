@@ -1,49 +1,46 @@
 import React from "react";
-import ComputersCanvas from "../canvas/Computer";
+import avatarImg from "../../assets/avatar.png";
+import Image from "next/image";
+import { FiGithub, FiTwitter } from "react-icons/fi";
+import { BsStackOverflow } from "react-icons/bs";
+import { TbBrandTelegram } from "react-icons/tb";
 
 type Props = {};
 
 function About({}: Props) {
   return (
-    <div id="about" className="grid grid-cols-1 lg:grid-cols-2">
-      <div className="h-full w-full p-6">
-        <ComputersCanvas />
+    <div id="about" className="grid grid-cols-1 lg:grid-cols-2 my-10 gap-20">
+      <div className="inset-0">
+        <p className="text-lg mb-3">About Me</p>
+        <h1 className="text-[3rem] lg:text-[5rem] leading-none font-medium">
+          Hello, <br /> I'm Abdul Kader, a Full Stack JavaScript and TypeScript
+          Developer. I have a passion for creating efficient, user-friendly, and
+          responsive web applications using the latest technologies.
+        </h1>
       </div>
-      <div className="text-sm">
-        <p>
-          Hello, I'm Abdul Kader, a Full Stack JavaScript and TypeScript
-          Developer from Dhaka, Bangladesh. I have a passion for creating
-          efficient, user-friendly, and responsive web applications using the
-          latest technologies. I specialize in both frontend and backend
-          development and have advanced-level skills in React, Next.js, Redux,
-          Material UI, Tailwind CSS, Express.js, GraphQL, Socket, Docker,
-          Firebase, Azure, AWS, Ubuntu, Nginx, and various databases like
-          MongoDB, PostgreSQL, MySQL, Firestore, etc.
-        </p>
-        <br />
-        <p>
-          {" "}
-          As a team player, I always strive to collaborate with my teammates to
-          produce the best products. I believe that teamwork, along with
-          dedication and passion, can create wonders in the tech industry.
-        </p>
-        <br />
-        <p>
-          {" "}
-          Apart from my technical skills, I have a few hobbies, such as watching
-          movies and traveling, that help me stay refreshed and energized. I
-          find traveling to be a great way to learn about different cultures and
-          broaden my horizons, while movies help me relax and unwind after a
-          long day of work.
-        </p>
-        <br />
-        <p>
-          {" "}
-          I am always looking for opportunities to learn and grow as a
-          developer, and I am excited about the prospect of working with new
-          clients and contributing my skills to create innovative solutions that
-          make a difference.
-        </p>
+      <div className="flex justify-center my-auto">
+        <div className="flex-col items-center flex">
+          <div className="w-72 hover:scale-105 duration-300 transition-all">
+            <Image src={avatarImg} alt="avatar" />
+          </div>
+
+          <div className="flex items-center gap-6">
+            <button className="bg-[#FEF48C] font-bold text-xl px-8 py-5 rounded-[2.5rem] mt-5 text-slate-950 hover:scale-95  transition-all duration-300">
+              Download Resume
+            </button>
+
+            <button className="bg-[#FEF48C] font-bold text-xl px-8 py-5 rounded-[2.5rem] mt-5 text-slate-950 hover:scale-95 transition-all duration-300">
+              Hire Me
+            </button>
+          </div>
+
+          <div className="flex items-center gap-6 my-8 text-3xl">
+            <FiGithub />
+            <FiTwitter />
+            <TbBrandTelegram />
+            <BsStackOverflow />
+          </div>
+        </div>
       </div>
     </div>
   );
