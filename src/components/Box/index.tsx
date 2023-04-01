@@ -35,10 +35,10 @@ const Box = ({
         <div>{topRight}</div>
       </div>
 
-      <div className="flex-grow inset-0 flex items-center w-full px-3">
+      <div className="flex-grow flex items-center w-full px-3">
         <div
           className={`overflow-hidden ${
-            showWithOutHover ? "visible" : "hidden group-hover:visible"
+            showWithOutHover ? "visible" : "invisible group-hover:visible"
           }`}
         >
           {animatedText && <Marquee duration={duration} text={animatedText} />}
