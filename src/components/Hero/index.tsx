@@ -26,7 +26,7 @@ function Hero({}: Props) {
   });
 
   return (
-    <div ref={target} className="relative mb-6 h-full w-full">
+    <div ref={target} className="relative min-h-screen h-full w-full">
       <div ref={train.ref as React.RefObject<HTMLDivElement>}>
         <HeroText />
       </div>

@@ -17,7 +17,7 @@ function About({}: Props) {
     >
       <div className="inset-0 ">
         <p className="text-lg mb-3">About Me</p>
-        <h1 className="text-[3rem] lg:text-[5rem] leading-none font-medium">
+        <h1 className="text-[3rem] lg:text-[4rem] leading-none font-medium">
           Hello, <br /> I'm Abdul Kader, a Full Stack JavaScript and TypeScript
           Developer. I have a passion for creating efficient, user-friendly, and
           responsive web applications using the latest technologies.
