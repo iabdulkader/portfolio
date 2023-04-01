@@ -1,9 +1,4 @@
 import React from "react";
-import avatarImg from "../../assets/avatar.png";
-import Image from "next/image";
-import { FiGithub, FiTwitter } from "react-icons/fi";
-import { BsStackOverflow } from "react-icons/bs";
-import { TbBrandTelegram } from "react-icons/tb";
 
 type Props = {};
 

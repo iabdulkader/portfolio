@@ -16,18 +16,19 @@ type Props = {};
 function Hero({}: Props) {
   const target = useRef<HTMLDivElement>(null);
   const train = useParallax({
-    speed: 2,
+    speed: 5,
+    scale: [1, 0.2],
     targetElement: target.current as HTMLDivElement,
   });
 
   const cloud = useParallax({
-    speed: 80,
+    speed: 100,
     targetElement: target.current as HTMLDivElement,
   });
 
   return (
     <div ref={target} className="relative min-h-screen h-full w-full">
-      <div ref={train.ref as React.RefObject<HTMLDivElement>}>
+      <div className=" " ref={train.ref as React.RefObject<HTMLDivElement>}>
         <HeroText />
       </div>
 
