@@ -28,7 +28,7 @@ const Box = ({
     >
       <div
         className={`h-[3rem] text-lg font-medium w-full flex justify-between px-5 lg:px-8 items-start pt-6 ${
-          showWithOutHover ? "block" : "visible group-hover:invisible"
+          showWithOutHover ? "visible" : "visible group-hover:invisible"
         }`}
       >
         <div>{topLeft}</div>
@@ -38,7 +38,7 @@ const Box = ({
       <div className="flex-grow inset-0 flex items-center w-full px-3">
         <div
           className={`overflow-hidden ${
-            showWithOutHover ? "block" : "hidden group-hover:block"
+            showWithOutHover ? "visible" : "hidden group-hover:visible"
           }`}
         >
           {animatedText && <Marquee duration={duration} text={animatedText} />}
@@ -47,7 +47,7 @@ const Box = ({
 
       <div
         className={`h-[3rem] text-lg font-medium w-full flex justify-between px-5 lg:px-8 items-start pb-6 ${
-          showWithOutHover ? "block" : "visible group-hover:invisible"
+          showWithOutHover ? "visible" : "visible group-hover:invisible"
         }`}
       >
         <div>{bottomLeft}</div>
