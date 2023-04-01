@@ -38,12 +38,16 @@ const Box = ({
       <div className="flex-grow flex items-center w-full px-3">
         <div
           className={`overflow-hidden ${
-            showWithOutHover ? "visible" : "invisible group-hover:visible"
+            showWithOutHover ? "visible" : "hidden group-hover:block"
           }`}
         >
           {animatedText && <Marquee duration={duration} text={animatedText} />}
         </div>
       </div>
+
+      {/* <div className="flex-grow flex items-center w-full px-3">
+        {animatedText && <Marquee duration={duration} text={animatedText} />}
+      </div> */}
 
       <div
         className={`h-[3rem] text-lg font-medium w-full flex justify-between px-5 lg:px-8 items-start pb-6 ${

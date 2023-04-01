@@ -13,7 +13,7 @@ const Marquee = ({ text, duration }: Props) => {
     <div className={`${styles.wrapper}`}>
       <div
         style={{ animationDuration: `${duration}s` }}
-        className={`${styles.marquee} font-bold text-[4rem]`}
+        className={`${styles.marquee} font-bold text-[3.5rem] lg:text-[4rem]`}
       >
         <p className="font-[Satoshi]">{repeatedText}</p>
         <p className="font-[Satoshi]">{repeatedText}</p>
