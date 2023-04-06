@@ -18,7 +18,7 @@ function HeroBoxes({}: Props) {
             className="bg-[#2800E7]"
             animatedText="As an experienced and passionate full stack developer, I bring a diverse range of technical expertise to the table. From building responsive user interfaces with React, Next.js, and Svelte to designing scalable backend systems with Express, Node, Python, Django, and Docker, I am comfortable with a range of different technologies. With excellent communication skills and a collaborative mindset, I thrive in team-oriented environments and always aim to add value to any project I am a part of."
             showWithOutHover
-            duration={500}
+            duration={650}
             topRight={
               <div className="w-12 h-12">
                 <Image src={Logo} alt="logo" />
@@ -34,7 +34,7 @@ function HeroBoxes({}: Props) {
         <div className="h-full gap-3 lg:gap-5 grid grid-cols-2">
           <Link href="#skills">
             <Box
-              duration={100}
+              duration={150}
               className="bg-[#FFFFFF] text-slate-900"
               animatedText="Joshare. jobin. modal-rt. link-shortner. joshare-file-service-microservice. 1337x API."
               bottomLeft={<div>Works</div>}
@@ -43,7 +43,7 @@ function HeroBoxes({}: Props) {
           </Link>
           <a href="#skills">
             <Box
-              duration={350}
+              duration={500}
               className="bg-[#344e41] "
               animatedText="React, Nextjs, Svelte, Redux, Context-API, Tailwind, Chakra, Material-UI, Express, Socket-IO, Node, Python, Django, Docker, MongoDB, PostgreSQL, MySQL, Redis, Heroku, Netlify, Vercel, DigitalOcean, Firebase, Git, Github, Trello, Slack, Discord, Zoom, Figma, Adobe Photoshop, Adobe Illustrator."
               bottomLeft={<div>Skills</div>}
@@ -53,7 +53,7 @@ function HeroBoxes({}: Props) {
         </div>
 
         <Box
-          duration={80}
+          duration={120}
           className="bg-[#FEF48C] text-slate-900"
           animatedText="Contact me for any work or suggestions that you would like to give."
           bottomLeft={<div>Contact</div>}
