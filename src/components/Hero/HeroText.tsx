@@ -10,8 +10,20 @@ function HeroText({ percentage }: Props) {
       <h1
         className={` font-[Satoshi] text-[3rem] lg:text-[5rem] font-bold`}
         style={{
-          scale: `${percentage === 0 ? 0 : (percentage + 45) / 100}`,
-          opacity: `${percentage === 0 ? 0 : (percentage + 45) / 100}`,
+          scale: `${
+            percentage === 0
+              ? 0
+              : (percentage + 45) / 100 > 1
+              ? 1
+              : (percentage + 45) / 100
+          }`,
+          opacity: `${
+            percentage === 0
+              ? 0
+              : (percentage + 45) / 100 > 1
+              ? 1
+              : (percentage + 45) / 100
+          }`,
         }}
       >
         abdul kader
