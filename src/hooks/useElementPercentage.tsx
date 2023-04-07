@@ -19,7 +19,6 @@ function useElementPercentage({ target }: Props) {
         );
         const visiblePercentage =
           (visibleHeight / divElement.offsetHeight) * 100;
-        // console.log(rect.bottom);
         setPercentage(Math.ceil(visiblePercentage));
       }
     };

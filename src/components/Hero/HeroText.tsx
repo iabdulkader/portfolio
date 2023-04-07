@@ -14,7 +14,7 @@ function HeroText({ percentage = null }: Props) {
           opacity: `${percentage ? percentage / 100 : 1}`,
         }}
       >
-        abdul kader
+        abdul kader{percentage}
       </h1>
     </div>
   );
