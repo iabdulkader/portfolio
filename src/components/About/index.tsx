@@ -6,6 +6,7 @@ import { BsStackOverflow } from "react-icons/bs";
 import { TbBrandTelegram } from "react-icons/tb";
 import { HiReply } from "react-icons/hi";
 import { HiOutlineDownload } from "react-icons/hi";
+import VoxelDog from "../VoxelDog";
 
 type Props = {};
 
@@ -25,8 +26,9 @@ function About({}: Props) {
       </div>
       <div className="flex justify-center my-auto">
         <div className="flex-col items-center flex">
-          <div className="w-72 hover:scale-105 duration-300 transition-all">
-            <Image src={avatarImg} alt="avatar" />
+          <div className="w-full hover:scale-105 duration-300 transition-all">
+            {/* <Image src={avatarImg} alt="avatar" /> */}
+            <VoxelDog />
           </div>
 
           <div className="flex items-center gap-6">

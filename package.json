@@ -20,9 +20,11 @@
     "react-icons": "^4.8.0",
     "react-scroll-motion": "^0.3.2",
     "react-scroll-parallax": "^3.3.2",
+    "three": "^0.151.3",
     "typescript": "4.9.5"
   },
   "devDependencies": {
+    "@types/three": "^0.150.1",
     "autoprefixer": "^10.4.14",
     "postcss": "^8.4.21",
     "tailwind-scrollbar": "^3.0.0",
