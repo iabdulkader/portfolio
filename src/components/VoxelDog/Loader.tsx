@@ -27,7 +27,7 @@ interface DogContainerProps {
 
 export const DogContainer = forwardRef<HTMLDivElement, DogContainerProps>(
   ({ children }, ref) => (
-    <div ref={ref} className="m-auto relative w-96 h-80">
+    <div ref={ref} className="overflow-hidden m-auto relative w-full h-80">
       {children}
     </div>
   )
