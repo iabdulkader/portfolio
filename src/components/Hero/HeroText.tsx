@@ -9,10 +9,10 @@ function HeroText({ percentage = null }: Props) {
     <div className="w-full flex justify-center h-96 items-center relative">
       <h1
         className={` text-[3rem] lg:text-[5rem] font-bold`}
-        style={{
-          scale: `${percentage ? percentage / 100 : 1}`,
-          opacity: `${percentage ? percentage / 100 : 1}`,
-        }}
+        // style={{
+        //   scale: `${percentage ? percentage / 100 : 1}`,
+        //   opacity: `${percentage ? percentage / 100 : 1}`,
+        // }}
       >
         abdul kader
       </h1>
