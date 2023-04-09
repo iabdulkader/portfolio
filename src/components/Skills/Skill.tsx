@@ -46,7 +46,7 @@ function Skill({
   return (
     <>
       <div
-        className="h-44 flex items-center lg:hidden rounded-[2.5rem] shadow-sm bg-[#231F1A] w-full bg-accent mb-6 transition-transform ease-out duration-500"
+        className="h-48 flex items-center lg:hidden rounded-[2.5rem] shadow-sm bg-[#231F1A] w-full bg-accent mb-6 transition-transform ease-out duration-500"
         style={styleMobile.case_1}
       >
         <Skill.Body title={title} description={description} />

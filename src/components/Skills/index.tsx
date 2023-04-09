@@ -48,7 +48,7 @@ function Skills({}: Props) {
               </div>
             }
             icontext="Latest frontend technologies."
-            description="React, Nextjs, Svelte, Tailwind, Chakra, Material UI, Bootstrap, Styled Components, Redux, Figma, JEST, Cypress, Storybook, Framer Motion, React Query etc."
+            description="React, Nextjs, Svelte, Tailwind, Chakra, Material UI, Bootstrap, Styled Components, Redux, JEST, Cypress, Storybook, Framer Motion, React Query etc."
             percentage={percentage}
             order={2}
           />
