@@ -15,7 +15,7 @@ export default function Home() {
       <ParallaxProvider>
         <>
           <Cursor />
-          <Hero />
+          {/* <Hero /> */}
           <Layout>
             <About />
             <Skills />

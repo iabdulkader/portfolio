@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "../Button";
 import Social from "./Social";
+import ContactForm from "../ContactForm";
 
 type Props = {};
 
@@ -14,9 +15,11 @@ function Contact({}: Props) {
           <br />
           Contact me!
         </h1>
-        <div className="mt-6">
+        <div className="mt-6 mb-6">
           <Social />
         </div>
+
+        <ContactForm />
       </div>
     </div>
   );
