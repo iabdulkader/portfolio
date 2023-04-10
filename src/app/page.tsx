@@ -7,6 +7,7 @@ import Hero from "../components/Hero";
 import Skills from "@/components/Skills";
 import { ParallaxProvider } from "react-scroll-parallax";
 import Works from "@/components/Works";
+import Contact from "@/components/Contact";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
             <About />
             <Skills />
             <Works />
+            <Contact />
           </Layout>
         </>
       </ParallaxProvider>

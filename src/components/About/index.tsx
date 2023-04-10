@@ -7,6 +7,7 @@ import { TbBrandTelegram } from "react-icons/tb";
 import { HiReply } from "react-icons/hi";
 import { HiOutlineDownload } from "react-icons/hi";
 import VoxelDog from "../VoxelDog";
+import Button from "../Button";
 
 type Props = {};
 
@@ -32,13 +33,17 @@ function About({}: Props) {
           </div>
 
           <div className="flex items-center gap-6">
-            <button className="bg-[#FEF48C] font-bold flex items-center gap-1 lg:gap-3 text-xs whitespace-nowrap lg:text-xl px-8 py-5 rounded-[2.5rem] mt-5 text-slate-950 hover:scale-95  transition-all duration-300">
-              <HiOutlineDownload /> Download Resume
-            </button>
+            <Button href="/">
+              <div className="font-medium flex items-center gap-1 lg:gap-3 text-xs whitespace-nowrap lg:text-xl">
+                <HiOutlineDownload /> Download Resume
+              </div>
+            </Button>
 
-            <button className="bg-[#FEF48C] font-bold flex items-center gap-1 lg:gap-3 text-xs whitespace-nowrap lg:text-xl px-8 py-5 rounded-[2.5rem] mt-5 text-slate-950 hover:scale-95 transition-all duration-300">
-              <HiReply /> Hire Me
-            </button>
+            <Button href="/">
+              <div className="font-medium flex items-center gap-1 lg:gap-3 text-xs whitespace-nowrap lg:text-xl">
+                <HiReply /> Hire Me
+              </div>
+            </Button>
           </div>
 
           <div className="flex items-center gap-6 my-8 text-3xl">
