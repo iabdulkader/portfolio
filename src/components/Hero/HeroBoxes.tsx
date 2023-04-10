@@ -32,7 +32,7 @@ function HeroBoxes({}: Props) {
 
       <div className="h-[24rem] lg:h-[30rem] grid grid-rows-2 px-2 lg:pr-5 lg:px-0 gap-3 lg:gap-5 ">
         <div className="h-full gap-3 lg:gap-5 grid grid-cols-2">
-          <Link href="#skills">
+          <a href="#works">
             <Box
               duration={150}
               className="bg-[#FFFFFF] text-slate-900"
@@ -40,7 +40,7 @@ function HeroBoxes({}: Props) {
               bottomLeft={<div>Works</div>}
               bottomRight={<BsTerminalPlus />}
             />
-          </Link>
+          </a>
           <a href="#skills">
             <Box
               duration={500}
