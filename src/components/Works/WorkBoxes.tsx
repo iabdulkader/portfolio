@@ -30,7 +30,7 @@ function WorkBoxes({}: Props) {
         <Link target="_blank" href="https://lilink.vercel.app">
           <Work
             className="bg-[#CBE5FF] text-slate-900"
-            middle="Link Shortner"
+            middle="liLink"
             topLeft="02."
             topRight="Showcase"
             height="24rem"
