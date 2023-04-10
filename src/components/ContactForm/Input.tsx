@@ -4,11 +4,16 @@ interface Props
   extends React.DetailedHTMLProps<
     React.InputHTMLAttributes<HTMLInputElement>,
     HTMLInputElement
-  > {}
+  > {
+  value?: string;
+  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
+}
 
-function Input({ type, placeholder }: Props) {
+function Input({ type, placeholder, value, onChange }: Props) {
   return (
     <input
+      value={value}
+      onChange={onChange}
       className="bg-[#231F1A] p-10 rounded-[3rem] w-full focus:border border-none outline-none focus:outline-[#FEF48C] placeholder-[#FEF48C]"
       placeholder={placeholder}
       type={type}
