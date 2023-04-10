@@ -8,6 +8,7 @@ import Skills from "@/components/Skills";
 import { ParallaxProvider } from "react-scroll-parallax";
 import Works from "@/components/Works";
 import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -15,13 +16,14 @@ export default function Home() {
       <ParallaxProvider>
         <>
           <Cursor />
-          {/* <Hero /> */}
+          <Hero />
           <Layout>
             <About />
             <Skills />
             <Works />
             <Contact />
           </Layout>
+          <Footer />
         </>
       </ParallaxProvider>
     </main>

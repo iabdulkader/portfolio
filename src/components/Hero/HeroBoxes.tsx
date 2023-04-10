@@ -53,6 +53,9 @@ function HeroBoxes({}: Props) {
         </div>
 
         <Box
+          onClick={() => {
+            window.open("#contact");
+          }}
           duration={120}
           className="bg-[#FEF48C] text-slate-900"
           animatedText="Contact me for any work or suggestions that you would like to give."

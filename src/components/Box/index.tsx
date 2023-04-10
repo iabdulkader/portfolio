@@ -11,6 +11,7 @@ interface Props {
   bottomLeft?: React.ReactNode | string | null;
   bottomRight?: React.ReactNode | string | null;
   height?: string;
+  onClick?: () => void;
 }
 
 const Box = ({
@@ -23,9 +24,11 @@ const Box = ({
   topRight,
   duration = 10,
   height = "3rem",
+  onClick,
 }: Props) => {
   return (
     <div
+      onClick={onClick}
       className={`flex flex-col overflow-hidden items-center h-full rounded-[2.5rem] hover:scale-95 transition-all duration-300 group ${className}`}
     >
       <div
