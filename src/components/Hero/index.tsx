@@ -1,8 +1,5 @@
-"use client";
-
 import React, { useRef } from "react";
 import HeroText from "./HeroText";
-import { useParallax } from "react-scroll-parallax";
 import HeroBoxes from "./HeroBoxes";
 import useElementPercentage from "@/hooks/useElementPercentage";
 

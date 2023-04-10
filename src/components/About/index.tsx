@@ -8,6 +8,7 @@ import { HiReply } from "react-icons/hi";
 import { HiOutlineDownload } from "react-icons/hi";
 import VoxelDog from "../VoxelDog";
 import Button from "../Button";
+import Link from "next/link";
 
 type Props = {};
 
@@ -33,13 +34,13 @@ function About({}: Props) {
           </div>
 
           <div className="flex items-center gap-6">
-            <Button href="/">
+            <Button href="/abdulkader.pdf">
               <div className="font-medium flex items-center gap-1 lg:gap-3 text-xs whitespace-nowrap lg:text-xl">
                 <HiOutlineDownload /> Download Resume
               </div>
             </Button>
 
-            <Button href="/">
+            <Button href="mailto:abdulkadernow@gmail.com">
               <div className="font-medium flex items-center gap-1 lg:gap-3 text-xs whitespace-nowrap lg:text-xl">
                 <HiReply /> Hire Me
               </div>
@@ -47,10 +48,21 @@ function About({}: Props) {
           </div>
 
           <div className="flex items-center gap-6 my-8 text-3xl">
-            <FiGithub />
-            <FiTwitter />
-            <TbBrandTelegram />
-            <BsStackOverflow />
+            <Link href="https://github.com/iabdulkader" target="_blank">
+              <FiGithub />
+            </Link>
+            <Link href="https://twitter.com/itsabdulkader" target="_blank">
+              <FiTwitter />
+            </Link>
+            <Link href="https://t.me/itsabdulkader" target="_blank">
+              <TbBrandTelegram />
+            </Link>
+            <Link
+              href="https://stackoverflow.com/users/17509745/itsabdulkader"
+              target="_blank"
+            >
+              <BsStackOverflow />
+            </Link>
           </div>
         </div>
       </div>
