@@ -10,6 +10,7 @@ interface Props {
   topRight?: React.ReactNode | string | null;
   bottomLeft?: React.ReactNode | string | null;
   bottomRight?: React.ReactNode | string | null;
+  height?: string;
 }
 
 const Box = ({
@@ -21,6 +22,7 @@ const Box = ({
   topLeft,
   topRight,
   duration = 10,
+  height = "3rem",
 }: Props) => {
   return (
     <div
@@ -50,7 +52,7 @@ const Box = ({
       </div> */}
 
       <div
-        className={`h-[3rem] text-lg font-medium w-full flex justify-between px-5 lg:px-8 items-start pb-6 ${
+        className={`h-[${height}] text-lg font-medium w-full flex justify-between px-5 lg:px-8 items-start pb-6 ${
           showWithOutHover ? "visible" : "visible group-hover:invisible"
         }`}
       >

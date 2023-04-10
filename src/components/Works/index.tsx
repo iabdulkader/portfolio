@@ -1,4 +1,5 @@
 import React from "react";
+import WorkBoxes from "./WorkBoxes";
 
 type Props = {};
 
@@ -10,6 +11,8 @@ function Skills({}: Props) {
         <h1 className="text-[3rem] lg:text-[4rem] leading-none font-medium">
           Projects I have worked on
         </h1>
+
+        <WorkBoxes />
       </div>
     </div>
   );
