@@ -19,7 +19,7 @@ export default function RootLayout({
         <meta name="description" content={metadata.description} />
         <meta property="og:description" content={metadata.description} />
         <meta property="og:url" content="https://abdulkader.live" />
-        <meta property="og:image" content="/logo.svg" />
+        <meta property="og:image" content="/logo.png" />
         <link rel="icon" href="/logo.svg" />
         <meta property="og:title" content={`${metadata.title}`} />
         <title>{metadata.title}</title>
