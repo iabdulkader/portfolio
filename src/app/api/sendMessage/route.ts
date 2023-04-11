@@ -1,3 +1,5 @@
+import { NextResponse } from "next/server";
+
 export async function POST(request: Request) {
   const { name, email, subject, message } = await request.json();
 
@@ -12,7 +14,7 @@ export async function POST(request: Request) {
       },
       body: JSON.stringify({
         chat_id: process.env.TELEGRAM_CHAT_ID,
-        text: `<b>New Support Message Received</b>\n\n<b>Name: </b><b><code>${name}</code></b>\n<b>Email: </b><code>${email}</code>\n<b>Subject: </b><code>${subject}</code>\n\n<b>Message: </b><code>${message}</code>`,
+        text: `<b>New message from abdulkader.live received</b>\n\n<b>Name: </b><b><code>${name}</code></b>\n<b>Email: </b><code>${email}</code>\n<b>Subject: </b><code>${subject}</code>\n\n<b>Message: </b><code>${message}</code>`,
         parse_mode: "HTML",
       }),
     }
@@ -21,12 +23,12 @@ export async function POST(request: Request) {
   const telegramResponse = await telegramSend.json();
 
   if (telegramResponse.ok) {
-    return {
+    return NextResponse.json({
       success: true,
-    };
+    });
   } else {
-    return {
+    return NextResponse.json({
       success: false,
-    };
+    });
   }
 }
