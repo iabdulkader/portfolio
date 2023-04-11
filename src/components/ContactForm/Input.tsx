@@ -19,7 +19,7 @@ function Input({
   error,
 }: Props) {
   return (
-    <div className="relative overflow-hidden">
+    <div className="relative overflow-hidden flex-grow">
       <input
         value={value}
         onChange={onChange}
