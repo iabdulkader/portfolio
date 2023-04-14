@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import "./globals.css";
 
 export const metadata = {
@@ -12,9 +11,6 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const [loading, setLoading] = useState<boolean>(true);
-
-  useEffect(() => {}, []);
   return (
     <html lang="en">
       <head>

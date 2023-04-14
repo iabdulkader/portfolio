@@ -65,7 +65,7 @@ function Skill({
             <div className="text-slate-700 flex items-center justify-center text-6xl h-full w-full">
               <div className="flex flex-col items-center">
                 {icon}
-                <p className="text-sm mt-2">{icontext}</p>
+                <p className="text-2xl font-bold mt-2">{icontext}</p>
               </div>
             </div>
           </div>
