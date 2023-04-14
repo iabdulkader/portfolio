@@ -22,7 +22,7 @@ export default function Home() {
   if (loading) {
     return (
       <div className="h-screen w-full flex justify-center items-center bg-bg_primary">
-        <div>
+        <div className="max-w-[50%] animate-pulse">
           <Image src={Logo} alt="abdul kader" />
         </div>
       </div>
