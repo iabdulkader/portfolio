@@ -14,7 +14,7 @@ export async function POST(request: Request) {
       },
       body: JSON.stringify({
         chat_id: process.env.TELEGRAM_CHAT_ID,
-        text: `<b>New message from abdulkader.live received</b>\n\n<b>Name: </b><b><code>${name}</code></b>\n<b>Email: </b><code>${email}</code>\n<b>Subject: </b><code>${subject}</code>\n\n<b>Message: </b><code>${message}</code>`,
+        text: `<b>New message from abdulkader.live received</b>\n\n<b>Name: </b><b><code>${name}</code></b>\n<b>Email: </b><code>${email}</code>\n<b>Subject: </b><code>${subject}</code>\n\n<b>Message:\n</b><code>${message}</code>`,
         parse_mode: "HTML",
       }),
     }
