@@ -36,7 +36,7 @@ function Skills({}: Props) {
               </div>
             }
             icontext="Languages I am comfortable with."
-            description="Typescript, javascript, Python, C(intermidiate), HTML, CSS, SQL."
+            description="Typescript, Javascript, Python, C(intermidiate), HTML, CSS, SQL."
             percentage={percentage}
             order={1}
           />
@@ -60,7 +60,7 @@ function Skills({}: Props) {
               </div>
             }
             icontext="Industry standard backend technologies."
-            description="Nodejs, Express, Fastify, Django, Trpc, GraphQL, Apollo, Typeorm, Sequelize, Prisma, Mongodb, Postgresql, Mysql, Redis, Firebase, etc."
+            description="Nodejs, Bun, Express, Fastify, Django, Trpc, GraphQL, Apollo, Typeorm, Sequelize, Prisma, Mongodb, Postgresql, Mysql, Redis, Firebase, etc."
             percentage={percentage}
             order={3}
           />
